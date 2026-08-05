@@ -11,4 +11,29 @@ pares, com um espaço entre cada número par. Após o último número da serie, 
 um espaço seguido de um caractere de quebra de linha (‘\n’). Se o primeiro número não for par, o programa
 deve imprimir a mensagem O PRIMEIRO NUMERO NAO E PAR e logo em seguida, o caractere de quebra
 de linha.
- */
+Exemplo
+Entrada
+20 10
+Saída
+20 22 24 26 28 30 32 34 36 38
+Entrada
+3 20
+Saída
+O PRIMEIRO NUMERO NAO E PAR */
+#include <stdio.h>
+int main (void) {
+    int n1,n2;
+    scanf("%d %d",&n1,&n2);
+    if (n1 % 2 ==0)
+    {
+        for (int i = 0; i < n2; i++)
+        {
+        
+            printf("%d ",(n1 + i*2));
+             
+        }
+    }else{
+        printf("O PRIMEIRO NUMERO NAO E PAR");
+    }
+    return 0;
+}
