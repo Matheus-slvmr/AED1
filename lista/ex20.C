@@ -25,15 +25,21 @@ Saída
 -20
  */
 #include <stdio.h>
-int progrecao (int a1 int r int n) {
-
+int progrecao (int a1, int r, int n) {
+    int soma = 0;
+    for (int i = 0; i < n; i++)
+    {
+        soma += a1 + (i * r);
+    }
+    
+return soma; 
     
 
 }
 int main (void) {
 int a1,r,n;
-    scanf("%d %d %d,&a1 &r &n");
-    printf("%d",progrecao(int a1, int r, int n));
+    scanf("%d %d %d",&a1, &r, &n);
+    printf("%d\n",progrecao(a1,r,n));
 
     return 0;
 }
